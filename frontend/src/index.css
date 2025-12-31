@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+  .scrollbar-theme {
+    scrollbar-width: thin;
+    scrollbar-color: #39465f #232737;
+  }
+
+  .scrollbar-theme::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-theme::-webkit-scrollbar-track {
+    background: #232737;
+  }
+
+  .scrollbar-theme::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #232737, #39465f);
+    border-radius: 9999px;
+  }
+
+  .scrollbar-theme::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #39465f, #232737);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
